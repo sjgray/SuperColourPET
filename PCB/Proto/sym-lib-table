@@ -1,0 +1,9 @@
+(sym_lib_table
+  (lib (name "65xx")(type "Legacy")(uri "C:/Users/sjgra/Desktop/Projects/KiCadProjects/_Libs/65xx.lib")(options "")(descr ""))
+  (lib (name "cbm-steve")(type "KiCad")(uri "C:/Users/sjgra/Desktop/Projects/KiCadProjects/_SteveLib/cbm-steve.kicad_sym")(options "")(descr ""))
+  (lib (name "cbm-old")(type "Legacy")(uri "C:/Users/sjgra/Desktop/Projects/KiCadProjects/_SteveLib/cbm-steve.lib")(options "")(descr ""))
+  (lib (name "Zilog_z80")(type "Legacy")(uri "C:/Users/sjgra/Desktop/Projects/KiCadProjects/_Libs/Zilog_z80.lib")(options "")(descr ""))
+  (lib (name "KU-schematics-library")(type "Legacy")(uri "${KIPRJMOD}/Libs/KU-schematics-library.lib")(options "")(descr ""))
+  (lib (name "cbm-lcd")(type "KiCad")(uri "${KIPRJMOD}/cbm-lcd.kicad_sym")(options "")(descr "")(disabled))
+  (lib (name "cbm")(type "KiCad")(uri "K:/Personal/Steve/KiCadProjects/_SteveLib/cbm.kicad_sym")(options "")(descr "")(disabled))
+)

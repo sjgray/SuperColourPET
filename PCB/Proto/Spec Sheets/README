@@ -1,0 +1,61 @@
+
+This archive contains the readouts of the three PROMs on the CBM 8296
+motherboard, UC2, UE5 and UE6.
+It further contains the logic equations, the program to derive the
+logic equations and some explanations.
+
+For more explanations, please have a look at the 8296 addendum 
+to the 8032 manual. You can find all that on the http://www.funet.fi/pub/cbm
+site.
+
+21nov1998 Andre Fachat (afachat@gmx.de)
+
+------------------------------------------------------------------
+
+Addendum April 2005
+
+In 1998 I did check the output of the QM algorithm, but of course this
+was half the way, as I did not check the equations I derived from the
+hex values themselves. 
+
+I have therefore now checked - and corrected - the equations in
+the 8296desc.txt file, using new check programs that implement the
+equations and regenerate the PLA output. The Makefile compiles the
+programs, creates the PLA outputs and diffs them against the original
+files.
+
+17.April 2005 André Fachat (afachat@gmx.de)
+
+------------------------------------------------------------------
+
+Files:
+ 8296desc.txt		description of the logic equations and some board jumpers
+
+ decodeqm4.c		Quine-McCluskey algorithm implementation
+			(from the double 16 bit hex values the first is the
+			mask of valid bits, the second is the bit values.
+			Don't get irritated by sometimes missing "|" and 
+			additional A16, it's just a printout bug...)
+
+ orig/uc2		readout of timing PROM (32 byte)
+ orig/ue5-1/2		readout of UE5, 2*32k
+ orig/ue6-1/2		readout of UE6, 2*32k
+
+ orig/uc2.out		decode output for uc2
+ orig/ue5.out		decode output for ue5
+ orig/ue6.b0-6.out	decode output for ue6 bits 0-6
+			(A power outage stopped the process during computation
+			of bit 7)
+ orig/ue6.b7.out	
+			decode output for ue6 bit 7
+			(took over a week to run on a PPro200....)
+
+ ue5check.c		reimplementation of the logic equations to check them,
+ ue6check.c		using the bitvalue/bitmask values directly taken from decodeqm
+			output
+
+ ue5check2.c		reimplementation of the logic equations as desribed in
+ ue6check2.c		8296desc.txt, using the logical signal names
+ uc2check.c
+
+

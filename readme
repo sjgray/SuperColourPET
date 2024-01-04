@@ -1,0 +1,26 @@
+SuperColourPET
+==============
+
+Introduction
+------------
+
+This is a project to create a Commodore SuperPET compatible computer with Colour. My ColourPET project aimed to add colour to a standard PET computer. While successful, ultimately I determined that adding all the features I wanted, like 80 column mode and graphics, would require too much hacking of a PET motherboard to be practical. So, I moved on to other projects. Recently I worked on the CLCD recreation project which provided the foundation for a nice 80 column 16-colour RGBI video using a 8563 VDC chip. This chip also supports graphics and software-defined fonts. I've also been interested in the dual-CPU SuperPET, with a 6809 CPU. So naturally I thought why not combine these things together? The result is the SuperColourPET (SCP). On top of that I wanted to go one more step to add a Z80 CPU for CP/M capabilities.
+
+Recently there has been interest in PET replacement boards fitting in standard PET cases and talk of also putting them in C64 cases. Why not both? So I've come up with a single board design that will fit in PET, C64 (breadbin), and 64C cases. When installed in a PET case all three ports on the back will be the same as a regular PET board. The 2nd cassette port will be available on a header. When installed in a C64-type case it provides access to a C64 compatible audio/video port, semi-compatible C64 cartridge port, IEC port, power, and two configurable joystick ports. The board only takes up 2/3 of the C64 case and the C64 cassette and user-port cutouts will be free. I will be designing different boards that can be mounted here for access to PET cassette and USER port, or to IEEE and RGBI port etc. All the ports on the board have headers so you can select which ports you want to extend out those two openings.
+
+Status
+------
+
+2023-02-24 - Prototype design complete. PCB's have been made. Project is on hold.
+2024-01-04 - Github created. Posted Kicad design files.
+
+*** The PROTO board has not been populated nor verified as working!!!!!
+*** No CPLD code is written. Firmware is in planning stage.
+*** This project should be considered as PRE-ALPHA! Use at own risk. Design subject to change!!!!!!!!!!!!!!!
+
+That being said, much of the design is derived from my Commodore CLCD design, which is at the stage of basic
+operation. The PET circuitry is based on the standard PET design. I am planning to build this bit-by-bit
+starting with PET functionality and slowly adding the other CPU's over time. This is a long-term project!
+
+Steve
+
